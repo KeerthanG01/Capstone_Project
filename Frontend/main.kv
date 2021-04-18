@@ -1,0 +1,18 @@
+#:include locationmapview.kv
+
+BoxLayout:
+	orientation: "vertical"
+	MDToolbar:
+		title: "Efficient Management of Water"
+		right_action_items: [['magnify',lambda x: app.search_menu.open()],['voice',lambda x:app.voice_menu()]]
+		md_bg_color: app.theme_cls.primary_color
+	LocationMapView:
+		id: mapview
+	Label: 
+		id: label
+		text: ""
+		text_size:self.size
+		color: (0,0,0,1)
+		valign: 'middle'
+		font_size: 15
+		size_hint : (0.001,0.001)
