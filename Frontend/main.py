@@ -11,11 +11,9 @@ class MainApp(MDApp):
 	location = None
 	def on_start(self):
 		#Initialize GPS
-
 		#Connect to database 
 		self.connection = sqlite3.connect('Locations.db')
 		self.cursor = self.connection.cursor()
-		
 		# Instantiate SearchPopupMenu 
 		self.search_menu = SearchPopupMenu()
 	

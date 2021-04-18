@@ -13,7 +13,7 @@ Initial=["Day","IW/CPE Ratio"]
 config = {
 		'user': 'root',
 		'password':'password',
-		'host': 'cloudintegration_db_1',
+		'host': 'backend_db_1',
 		'port': '3306',
 		'database': 'cities'
 		}
